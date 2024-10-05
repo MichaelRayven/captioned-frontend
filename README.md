@@ -1,50 +1,17 @@
-# React + TypeScript + Vite
+# Captioned
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Captioned is an online transcriber or simply a video/audio to text converter.
 
-Currently, two official plugins are available:
+This project is build using React, TypeScript, Tailwind, CASL and zustand on the frontend.
+With Flask, Celery and vosk on the [backend]().
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+If you like my project 😋, please give it a star! ⭐
 
-## Expanding the ESLint configuration
+## TODO
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Here is the current frontend development progress.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- [x] Create a logo
+- [x] Add ```./src``` alias resolution
+- [] Create TopBar component
+- [] Fetch navigation bar items from the server
