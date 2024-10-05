@@ -13,5 +13,5 @@ Here is the current frontend development progress.
 
 - [x] Create a logo
 - [x] Add ```./src``` alias resolution
-- [] Create TopBar component
-- [] Fetch navigation bar items from the server
+- [ ] Create TopBar component
+- [ ] Fetch navigation bar items from the server
